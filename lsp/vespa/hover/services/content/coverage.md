@@ -1,0 +1,4 @@
+## coverage
+
+Contained in [search](https://docs.vespa.ai/en/reference/services-content.html#search). Declares search coverage configuration for this content cluster. Optional sub-elements are [minimum](https://docs.vespa.ai/en/reference/services-content.html#minimum), [min-wait-after-coverage-factor](https://docs.vespa.ai/en/reference/services-content.html#min-wait-after-coverage-factor) and [max-wait-after-coverage-factor](https://docs.vespa.ai/en/reference/services-content.html#max-wait-after-coverage-factor). Search coverage configuration controls how many nodes the query dispatcher process should wait for, trading search coverage versus search performance.
+[Read more](https://docs.vespa.ai/en/reference/services-content.html#coverage)

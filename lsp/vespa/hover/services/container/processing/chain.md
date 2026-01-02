@@ -1,0 +1,6 @@
+## chain
+
+An element for defining a chain of [processors](https://docs.vespa.ai/en/reference/services-processing.html) / [searchers](https://docs.vespa.ai/en/reference/services-search.html) / [document processors](https://docs.vespa.ai/en/reference/services-docproc.html) (i.e. components). A chain is a set ordered by dependencies. Dependencies are expressed through phases, which may depend upon other phases, or components. For an incoming request from the network, the chain named *default* will be invoked. Refer to [Chained components](https://docs.vespa.ai/en/components/chained-components.html) for a guide. Requires one of *id* or *idref*.
+
+Searcher, Document processing and Processing chains can be modified at runtime without restarts. Modification includes adding/removing processors in chains and changing names of chains and processors. Make the change and [deploy](https://docs.vespa.ai/en/application-packages.html#deploy). Some changes require a container restart, refer to [reconfiguring document processing](https://docs.vespa.ai/en/document-processing.html#reconfiguring-document-processing).
+[Read more](https://docs.vespa.ai/en/reference/services-processing.html#chain)

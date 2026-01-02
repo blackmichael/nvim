@@ -1,0 +1,4 @@
+## adminserver
+
+The configured node will be the default administration node in your Vespa system, which means that unless configured otherwise all administrative services - i.e. the log server, the configuration server, the slobrok, and so on - will run on this node. Use [configservers](https://docs.vespa.ai/en/reference/services-admin.html#configservers), [logserver](https://docs.vespa.ai/en/reference/services-admin.html#logserver), [slobroks](https://docs.vespa.ai/en/reference/services-admin.html#slobroks) elements if you need to specify baseport or jvm options for any of these services.
+[Read more](https://docs.vespa.ai/en/reference/services-admin.html#adminserver)
