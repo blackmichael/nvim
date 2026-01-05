@@ -2,3 +2,9 @@
 
 Customized to align with keystrokes and features I'm used to in JetBrains GoLand.
 
+See [the LazyVim docs](https://www.lazyvim.org/#%EF%B8%8F-requirements) for requirements.
+
+```sh
+brew install --cask font-meslo-lg-nerd-font
+brew install tree-sitter lazygit luarocks fzf fd ripgrep 
+```
