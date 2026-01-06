@@ -1,4 +1,0 @@
-## flush-on-shutdown
-
-Contained in [proton](https://docs.vespa.ai/en/reference/services-content.html#proton). Default value is true. If set to true, search nodes will flush a set of components (e.g. memory index, attributes) to disk before shutting down such that the time it takes to flush these components plus the time it takes to replay the [transaction log](https://docs.vespa.ai/en/proton.html#transaction-log) after restart is as low as possible. The time it takes to replay the transaction log depends on the amount of data to replay, so by flushing, some components before restart the transaction log will be pruned, and we reduce the replay time significantly. Refer to [Proton maintenance jobs](https://docs.vespa.ai/en/proton.html#proton-maintenance-jobs).
-[Read more](https://docs.vespa.ai/en/reference/services-content.html#flush-on-shutdown)

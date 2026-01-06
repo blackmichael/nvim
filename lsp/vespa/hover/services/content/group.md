@@ -1,6 +1,0 @@
-## group
-
-Contained in [content](https://docs.vespa.ai/en/reference/services-content.html#content) or [group](https://docs.vespa.ai/en/reference/services-content.html#group) - groups can be nested. Defines the [hierarchical structure](https://docs.vespa.ai/en/elasticity.html#grouped-distribution) of the cluster. Can not be used in conjunction with the [nodes](https://docs.vespa.ai/en/reference/services-content.html#nodes) element. Groups can contain other groups or nodes, but not both. There can only be a single level of leaf groups under the top group.
-
-When using groups in [Open Source Vespa](https://vespa.ai/), [searchable-copies](https://docs.vespa.ai/en/reference/services-content.html#searchable-copies) and [redundancy](https://docs.vespa.ai/en/reference/services-content.html#redundancy) is the *total* replica number, across all leaf groups in the cluster. For groups in Vespa Cloud, see [services in Vespa Cloud](https://docs.vespa.ai/en/reference/services.html#nodes).
-[Read more](https://docs.vespa.ai/en/reference/services-content.html#group)
