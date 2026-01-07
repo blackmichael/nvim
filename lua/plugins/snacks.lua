@@ -9,7 +9,14 @@ return {
           preview = true,
         },
       },
+      ---@class snacks.picker.Config
       picker = {
+        formatters = {
+          file = {
+            truncate = "left",
+            min_width = 80,
+          },
+        },
         sources = {
           explorer = {
             hidden = true,
