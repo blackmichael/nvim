@@ -15,7 +15,6 @@ return {
       servers = {
         vespa_ls = {
           cmd = { "java", "-jar", "/Users/michaelblack/.config/nvim/lsp/vespa/vespa-language-server.jar" },
-          -- vim.lsp.enable("vespa_ls")
         },
       },
     },
@@ -28,6 +27,43 @@ return {
       diagnostics = {
         -- Disable markdown diagnostics from lsp
         virtual_text = false,
+      },
+    },
+  },
+
+  -- Go
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        gopls = {
+          settings = {
+            gopls = {
+              hints = {
+                assignVariableTypes = false,
+                compositeLiteralFields = true,
+                compositeLiteralTypes = true,
+                constantValues = true,
+                functionTypeParameters = true,
+                parameterNames = true,
+                rangeVariableTypes = true,
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+
+  -- Typescript
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        javascript = { "prettier" },
+        typescript = { "prettier" },
+        javascriptreact = { "prettier" },
+        typescriptreact = { "prettier" },
       },
     },
   },

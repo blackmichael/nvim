@@ -25,6 +25,10 @@ return {
               preview = false,
             },
           },
+          lsp_references = {
+            hidden = false,
+            ignored = false,
+          },
         },
         lsp = {
           symbols = {
