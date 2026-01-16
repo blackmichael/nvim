@@ -48,6 +48,7 @@ return {
                 parameterNames = true,
                 rangeVariableTypes = true,
               },
+              gofumpt = false,
             },
           },
         },
