@@ -77,6 +77,13 @@ return {
         end,
         desc = "Resume last picker",
       },
+      {
+        "<leader>H",
+        function()
+          Snacks.dashboard.open()
+        end,
+        desc = "Open home dashboard",
+      },
     },
 
     -- TODO fix this so it doesn't override the mini.starter menu functionality
