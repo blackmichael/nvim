@@ -1,11 +1,15 @@
 return {
   {
     "zbirenbaum/copilot.lua",
+    dependencies = {
+      "copilotlsp-nvim/copilot-lsp",
+    },
+    disabled = true,
     cmd = "Copilot",
     event = "InsertEnter",
     opts = {
       -- Point to the specific node version to avoid conflict with node projects
-      copilot_node_command = vim.fn.expand("$HOME") .. "/.nvm/versions/node/v22.21.1/bin/node",
+      copilot_node_command = {"nvm", "which", "node"},
       suggestion = { enabled = true },
       panel = { enabled = false },
       filetypes = {
